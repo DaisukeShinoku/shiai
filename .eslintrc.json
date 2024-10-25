@@ -12,5 +12,23 @@
   "plugins": ["unused-imports"],
   "rules": {
     "unused-imports/no-unused-imports": "error"
-  }
+  },
+  "import/order": [
+    "error",
+    {
+      "groups": ["builtin", "external", "internal", "parent", "sibling", "index", "object", "type"],
+      "newlines-between": "always",
+      "pathGroupsExcludedImportTypes": ["builtin"],
+      "pathGroups": [
+        {
+          "pattern": "@/components/**",
+          "group": "internal",
+          "position": "before"
+        }
+      ],
+      "alphabetize": {
+        "order": "asc"
+      }
+    }
+  ]
 }
