@@ -2,7 +2,6 @@
   "recommendations": [
     "dbaeumer.vscode-eslint", // ESLint
     "esbenp.prettier-vscode", // Prettier
-    "yusukehirao.vscode-markuplint", // Markuplint
     "bradlc.vscode-tailwindcss" // Tailwind CSS IntelliSense
   ]
 }
